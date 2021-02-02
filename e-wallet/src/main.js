@@ -47,12 +47,28 @@ new Vue({
                 validMonth: "12",
                 validYear: "2023",
               },
-            ]
+            ],
+            activeCardIndex:0
         };
     },
     methods:{
       setActiveCard(id) {
-        this.cardData = this.cardData.filter((cards) => cards.id === id);
+        const activeCard = this.cardData.find(card => card.id == id);
+       
+        if(activeCard){
+
+          const indexOf = this.cardData.indexOf(activeCard);
+
+          if(indexOf > -1){
+            this.activeCardIndex = indexOf;
+          }
+          else{
+
+            this.activeCardIndex = 0;
+          }
+        }
+
+
       }
 
     },

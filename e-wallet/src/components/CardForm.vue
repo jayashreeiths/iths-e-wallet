@@ -87,15 +87,15 @@ export default {
   methods: {
       changeColor(){
   if (this.$refs.form.vendor.value == "vendor-bitcoin") {
-        this.$data.bgColor = "#F9B449";
+        this.$data.bgColor = "#800000";
        
       }
       if (this.$refs.form.vendor.value == "vendor-blockchain") {
-        this.$data.bgColor = "#DF2E4C";
+        this.$data.bgColor = "blue";
         
       }
       if (this.$refs.form.vendor.value == "vendor-evil") {
-         this.$data.bgColor = "#8050E5";
+         this.$data.bgColor = "grey";
         
       }
       if (this.$refs.form.vendor.value == "vendor-ninja") {

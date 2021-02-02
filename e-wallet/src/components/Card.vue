@@ -35,6 +35,7 @@ export default {
   },
   methods: {
     makeActiveCard() {
+      console.log(this.id)
       this.$root.setActiveCard(this.id);
     }
   },

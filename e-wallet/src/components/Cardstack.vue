@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     cards() {
-      return this.$root.cardData
+      return this.$root.$data.cardData
     }
   },
     };

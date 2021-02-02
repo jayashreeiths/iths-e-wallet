@@ -33,22 +33,22 @@ export default {
 
 computed: {
     cardNumber() {
-      return this.$root.cardData[0].number
+      return this.$root.cardData[this.$root.activeCardIndex].number
     },
     cardHolder() {
-      return this.$root.cardData[0].holder
+      return this.$root.cardData[this.$root.activeCardIndex].holder
     },
  expiryDate() {
-      return this.$root.cardData[0].validMonth + "/" + this.$root.cardData[0].validYear;
+      return this.$root.cardData[this.$root.activeCardIndex].validMonth + "/" + this.$root.cardData[this.$root.activeCardIndex].validYear;
     },
     vendor() {
-      return this.$root.cardData[0].vendor;
+      return this.$root.cardData[this.$root.activeCardIndex].vendor;
     },
     cardId() {
-      return this.$root.cardData[0].id;
+      return this.$root.cardData[this.$root.activeCardIndex].id;
     },
     bgColor() {
-      return this.$root.cardData[0].bgColor;
+      return this.$root.cardData[this.$root.activeCardIndex].bgColor;
     },
     
   }
